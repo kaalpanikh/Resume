@@ -34,14 +34,22 @@
             border-radius: 0 0 5px 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
         .button {
-            display: inline-block;
+            flex: 1 0 auto;
             background-color: #3498db;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            text-align: center;
+            min-width: 150px;
         }
         .button:hover {
             background-color: #2980b9;
@@ -50,6 +58,14 @@
             margin-top: 2rem;
             border-top: 1px solid #eee;
             padding-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            .button {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -64,11 +80,10 @@
         
         <h2>Resume</h2>
         <p>View my resume in your preferred format:</p>
-        <p>
+        <div class="button-container">
             <a href="Nikhil_Resume.pdf" class="button">View PDF Resume</a>
-            <br>
             <a href="main.tex" class="button">View LaTeX Source</a>
-        </p>
+        </div>
         
         <h2>Key Skills</h2>
         <ul>
@@ -83,7 +98,7 @@
             <p>Email: <a href="mailto:nm30472@gmail.com">nm30472@gmail.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/nikhil-mishra-392503306">linkedin.com/in/nikhil-mishra</a></p>
             <p>GitHub: <a href="https://github.com/kaalpanikh">github.com/kaalpanikh</a></p>
-            <p>Twitter: <a href="https://x.com/kaalpanikhitis">x.com/kaalpanikhitis</a></p>
+            <p>X: <a href="https://x.com/kaalpanikhitis">x.com/kaalpanikhitis</a></p>
         </div>
     </div>
 </body>
