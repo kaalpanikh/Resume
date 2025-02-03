@@ -4,7 +4,7 @@ This repository contains my professional resume.
 
 ## Files
 
-- `Nikhil_Resume.pdf`: The compiled PDF version of my resume
+- `Nikhil_Resume_New.pdf`: The compiled PDF version of my resume
 - `main.tex`: The LaTeX source file for my resume
 - `index.html`: The landing page for the GitHub Pages site
 
