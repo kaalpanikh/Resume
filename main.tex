@@ -1,13 +1,10 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Author : Nikhil Mishra
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
@@ -20,18 +17,14 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
 %----------FONT OPTIONS----------
-% sans-serif
+% Uncomment one of the following to change the font
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
-
-% serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -102,79 +95,88 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Nikhil Mishra} \\ \vspace{1pt}
     \small  9975646076 $|$ \href{mailto:nm30472@gmail.com}{\underline{nm30472@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/nikhil-mishra-392503306}{\underline{linkedin.com/in/nikhil-mishra}} $|$
+    \href{https://iam.nikhilmishra.live}{\underline{iam.nikhilmishra.live}} $|$
+    \href{https://links.nikhilmishra.live}{\underline{links.nikhilmishra.live}} $|$
     \href{https://github.com/kaalpanikh}{\underline{github.com/kaalpanikh}} $|$
+    \href{https://linkedin.com/in/nikhil-mishra}{\underline{linkedin.com/in/nikhil-mishra}} $|$
     \href{https://x.com/kaalpanikhitis}{\underline{x.com/kaalpanikhitis}}
 \end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \resumeSubHeadingListStart
+    \item{
+      DevOps Engineer with expertise in optimising infrastructure, implementing CI/CD pipelines, and ensuring system reliability. Passionate about building and learning everything possible. Active blogger sharing insights on DevOps practices and cloud technologies.
+    }
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {DevOps Engineer}{Jul. 2024 -- Present}
-      {Hooked}{Mumbai}
+      {Hooked}{Mumbai, India}
       \resumeItemListStart
-        \resumeItem{Optimized AWS infrastructure, reducing monthly costs from \$120+ to under \$10 through efficient resource management and cost-saving strategies.}
-        \resumeItem{Architected and implemented end-to-end CI/CD pipeline, including Docker image creation, GitHub Actions workflows, and RunPod integration, streamlining the development and deployment process.}
-        \resumeItem{Established robust infrastructure components, including AWS object storage and SMTP server setup, while also taking on SRE responsibilities to ensure system reliability and performance.}
+        \resumeItem{Transitioned Hooked's infrastructure from a web app to a Kubernetes-based backend, and later to an EC2-based backend, ensuring seamless operations.}
+        \resumeItem{Built a Discord bot to notify about serverless spending daily, improving cost visibility.}
+        \resumeItem{Reduced AWS costs from \$130 to \$10 monthly through resource optimisation and cost-saving strategies.}
+        \resumeItem{Managed CI/CD pipelines for 20+ repositories, including Docker image builds and DockerHub pushes.}
+        \resumeItem{Created a serverless monitoring service handling 20+ services on RunPod.}
       \resumeItemListEnd
     
     \resumeSubheading
       {SRE Intern}{May 2023 -- Aug. 2023}
-      {Dukaan}{Bengaluru}
-    \resumeSubSubheading
-      {\href{https://dukaan.nikhilmishra.live}{\underline{The Dukaan Blog}}}{}
+      {Dukaan}{Bengaluru, India}
       \resumeItemListStart
-        \resumeItem{Played a key role in migrating Dukaan's renowned bare metal infrastructure, ensuring smooth transition and minimal downtime through meticulous planning and execution.}
-        \resumeItem{Implemented comprehensive monitoring solutions, including Grafana dashboards and ELK stack integration, to track API health and critical system metrics, enhancing overall system observability and performance.}
-        \resumeItem{Contributed to the initial development of Bot9AI while maintaining vigilant monitoring of mission-critical systems, setting up alerts, and providing rapid response to potential issues, thereby ensuring high availability and reliability of services.}
+        \resumeItem{Managed cloud infrastructure and contributed to the migration from cloud to bare metal.}
+        \resumeItem{Implemented monitoring solutions using Grafana dashboards and ELK stack integration.}
+        \resumeItem{\textbf{Link:} \href{https://dukaan.nikhilmishra.live}{\underline{dukaan.nikhilmishra.live}}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{My DevOps Blog}}{\href{https://nikhilmishra.live/}{\underline{nikhilmishra.live}}}
-      \resumeSubHeadingListStart
-        \resumeSubItem{\textit{Technologies used: VMware VirtualBox, Vagrant, Linux, Bash, AWS (EC2, Route53, ACM, ELB, S3, ASG, IAM)}}
-      \resumeSubHeadingListEnd
-          \resumeItemListStart
-            \resumeItem{Developed a comprehensive DevOps blog showcasing multi-tier web application deployment techniques.}
-            \resumeItem{Implemented local deployment using Vagrant and VirtualBox, integrating services like Nginx, Memcache, RabbitMQ, Tomcat, and MySQL \href{https://nikhilmishra.live/i-can-setup-a-multi-tier-app-locally-for-you}{\underline{(Blog Link)}}.}
-            \resumeItem{Demonstrated cloud migration strategies by escalating the application to AWS, utilizing various IaaS services \href{https://nikhilmishra.live/i-escalated-my-app-to-the-cloud}{\underline{(Blog Link)}}.}
-            \resumeItem{Showcased proficiency in both on-premises and cloud-based DevOps practices, emphasizing scalability and infrastructure management.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Roadmap.sh DevOps Projects}}{}
+      \resumeItemListStart
+        \resumeItem{Completed 20+ DevOps projects covering topics such as Infrastructure Automation, Containerisation, CI/CD Pipelines, Monitoring, and Cloud Deployments.}
+        \resumeItem{\textbf{Links:} \href{https://roadmap.sh/u/kaalpanikh}{\underline{roadmap.sh/u/kaalpanikh}}, \href{https://github.com/kaalpanikh}{\underline{github.com/kaalpanikh}}}
+      \resumeItemListEnd
 
-%
+    \resumeProjectHeading
+      {\textbf{Blog Contributions}}{\href{https://nikhilmishra.live}{\underline{nikhilmishra.live}}}
+      \resumeItemListStart
+        \resumeItem{\textbf{I made this during Builspace's Nights and Weekends S4}}
+        \resumeItem{\textbf{I Escalated My App to the Cloud!}}
+        \resumeItem{\textbf{I Can Set Up a Multi-Tier App Locally for You.}}
+        \resumeItem{\textbf{Custom Subdomain Forwarding with Cloudflare.}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Cloud \& Infrastructure}{: AWS (EC2, Route53, ACM, ELB, S3, ASG, IAM), Kubernetes, Docker, Terraform, Ansible, RunPod.}\\
-     \textbf{CI/CD \& Version Control}{: Jenkins, Git, GitHub, GitOps.}\\
-     \textbf{Monitoring \& Logging}{: ELK Stack, Prometheus, Grafana.}\\
-     \textbf{Operating Systems \& Scripting}{: Linux, Bash Scripting.}\\
-     \textbf{Virtualization \& Development}{: VMware VirtualBox, Vagrant, VS Code.}\\
-     \textbf{Web Services \& Databases}{: Nginx, Tomcat, SMTP server, MySQL, RabbitMQ, Memcache.}
+     \textbf{Cloud & Infrastructure:} AWS, Kubernetes, Docker, Terraform, Ansible. \\
+     \textbf{CI/CD & Version Control:} Jenkins, GitHub Actions, GitOps. \\
+     \textbf{Monitoring & Logging:} ELK Stack, Prometheus, Grafana. \\
+     \textbf{Programming & Scripting:} Java, Bash, Python. \\
+     \textbf{Other Abilities:} fail2ban, Systemd, DNS Management, Netdata, Cloudflare Workers.
     }}
  \end{itemize}
 
+%-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Mumbai University}{Boisar, Maharashtra}
+      {Mumbai University}{Boisar, Maharashtra, India}
       {Bachelor of Engineering in Computer Engineering}{Aug. 2021 -- May 2025 (Expected)}
   \resumeSubHeadingListEnd
 
