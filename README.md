@@ -20,3 +20,5 @@ For more about me, visit:
 - Links: https://links.nikhilmishra.live
 
 Feel free to reach out to me via the contact information provided in the resume.
+
+i have ats score of 60 odd want to improve it but am unable to looking for help !
