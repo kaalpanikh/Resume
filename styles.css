@@ -1,0 +1,121 @@
+:root {
+    --text-color: #1a1a1a;
+    --bg-color: #ffffff;
+    --link-color: #0070f3;
+    --secondary-color: #666666;
+    --border-color: #eaeaea;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    background-color: var(--bg-color);
+    font-size: 16px;
+}
+h1, h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+p, ul {
+    margin-bottom: 1.5rem;
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+a:hover {
+    text-decoration: underline;
+}
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+main {
+    margin-top: 2rem;
+}
+ul {
+    padding-left: 1.2rem;
+    list-style-type: circle;
+}
+li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+}
+.links {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.links a {
+    position: relative;
+}
+.links a::after {
+    content: "→";
+    margin-left: 0.25rem;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.links a:hover::after {
+    opacity: 1;
+    transform: translateX(3px);
+}
+.section {
+    margin-bottom: 2.5rem;
+}
+.experience-item, .project-item {
+    margin-bottom: 1.5rem;
+}
+.experience-item h3, .project-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.experience-item p, .project-item p {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+.contact {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+footer {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    text-align: center;
+}

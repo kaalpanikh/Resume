@@ -5,66 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nikhil Mishra - DevOps Engineer. View my professional experience, skills, and achievements.">
     <title>Nikhil Mishra</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 650px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #fff;
-        }
-        h1, h2 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-        h1 {
-            font-size: 2rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-        }
-        p, ul, ol {
-            margin-bottom: 1rem;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .links {
-            margin: 1.5rem 0;
-        }
-        .links a {
-            margin-right: 1rem;
-            display: inline-block;
-        }
-        .contact {
-            margin-top: 2rem;
-            border-top: 1px solid #eee;
-            padding-top: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Nikhil Mishra</h1>
-    <p class="subtitle">I'm a DevOps Engineer passionate about cloud infrastructure, CI/CD pipelines, and system reliability 🚀☁️🔧</p>
+    <header>
+        <h1>Nikhil Mishra</h1>
+        <p class="subtitle">DevOps Engineer passionate about cloud infrastructure, CI/CD pipelines, and system reliability 🚀</p>
+    </header>
 
     <div class="links">
         <a href="Nikhil_Resume_New.pdf">Resume (PDF)</a>
@@ -72,35 +19,53 @@
         <a href="https://links.nikhilmishra.live">My Links</a>
     </div>
 
-    <h2>Experience</h2>
-    <ul>
-        <li><a href="https://dukaan.nikhilmishra.live">Dukaan</a> - Site Reliability Engineering Intern</li>
-        <li><a href="#">Hooked</a> - DevOps Engineer</li>
-    </ul>
+    <main>
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3><a href="#">Hooked</a></h3>
+                <p>DevOps Engineer • Jul 2024–Present</p>
+                <div>Architecting cloud infrastructure and optimizing CI/CD pipelines to improve system performance and reduce costs.</div>
+            </div>
+            <div class="experience-item">
+                <h3><a href="https://dukaan.nikhilmishra.live">Dukaan</a></h3>
+                <p>Site Reliability Engineering Intern • May 2023–Aug 2023</p>
+                <div>Part of cloud-to-bare-metal migration and integrated monitoring solutions to improve system reliability.</div>
+            </div>
+        </section>
 
-    <h2>Key Skills</h2>
-    <ul>
-        <li>Cloud & Infrastructure: AWS, Kubernetes, Docker, Terraform, Ansible</li>
-        <li>CI/CD & Version Control: Jenkins, GitHub Actions, GitOps</li>
-        <li>Monitoring & Logging: ELK Stack, Prometheus, Grafana</li>
-        <li>Programming & Scripting: Java, Bash, Python</li>
-    </ul>
-
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://aushadhiai.nikhilmishra.live">AushadhiAI</a> - AI-powered platform for medicine identification and analysis</li>
-        <li><a href="https://iam.nikhilmishra.live">Personal Technical Portfolio</a> - Showcasing DevOps projects and achievements</li>
-        <li><a href="https://nikhilmishra.live">DevOps Technical Blog</a> - Articles on cloud infrastructure and automation</li>
-        <li><a href="https://github.com/kaalpanikh">GitHub Projects</a> - 20+ DevOps implementations and demonstrations</li>
-    </ul>
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3><a href="https://aushadhiai.nikhilmishra.live">AushadhiAI</a></h3>
+                <p>AI-powered platform for medicine identification and analysis</p>
+            </div>
+            <div class="project-item">
+                <h3><a href="https://iam.nikhilmishra.live">Personal Technical Portfolio</a></h3>
+                <p>Showcasing DevOps projects and professional achievements</p>
+            </div>
+            <div class="project-item">
+                <h3><a href="https://nikhilmishra.live">DevOps Technical Blog</a></h3>
+                <p>Articles on cloud infrastructure and automation best practices</p>
+            </div>
+            <div class="project-item">
+                <h3><a href="https://github.com/kaalpanikh">GitHub Projects</a></h3>
+                <p>20+ DevOps implementations and demonstrations</p>
+            </div>
+        </section>
+    </main>
 
     <div class="contact">
         <p>Email: <a href="mailto:nm30472@gmail.com">nm30472@gmail.com</a></p>
-        <p>
-            <a href="https://linkedin.com/in/nikhil-mishra">LinkedIn</a> | 
-            <a href="https://github.com/kaalpanikh">GitHub</a> | 
+        <div class="social-links">
+            <a href="https://linkedin.com/in/nikhil-mishra">LinkedIn</a>
+            <a href="https://github.com/kaalpanikh">GitHub</a>
             <a href="https://x.com/kaalpanikhitis">X</a>
-        </p>
+        </div>
     </div>
+
+    <footer>
+        <p>&#169; 2025 Nikhil Mishra</p>
+    </footer>
 </body>
 </html>
