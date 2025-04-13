@@ -1,4 +1,4 @@
-# Nikhil Mishra - Professional Resume
+# Nikhil Mishra - Resume
 
 [![PDF Version](https://img.shields.io/badge/PDF-Resume-blue)](Nikhil_Resume_New.pdf)
 [![Web Version](https://img.shields.io/badge/Web-CV-green)](https://cv.nikhilmishra.live)
