@@ -4,7 +4,7 @@
 [![Web Version](https://img.shields.io/badge/Web-CV-green)](https://cv.nikhilmishra.live)
 [![ATS Optimized](https://img.shields.io/badge/ATS-Optimized-orange)](Nikhil_Resume_New.pdf)
 
-This repository contains my professional resume, showcasing my experience as a DevOps Engineer with expertise in cloud infrastructure, CI/CD pipelines, and system optimization.
+This repository contains my professional resume, showcasing my experience as a DevOps Engineer with expertise in cloud infrastructure, CI/CD pipelines, and system optimization
 
 ## Resume Formats
 
