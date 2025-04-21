@@ -9,7 +9,6 @@ This repository contains my professional resume, showcasing my experience as a D
 ## Resume Formats
 
 - **PDF Resume**: [`Nikhil_Resume_New.pdf`](Nikhil_Resume_New.pdf) - ATS-optimized resume for job applications
-- **LaTeX Source**: [`main.tex`](main.tex) - Source file for generating the PDF resume
 - **Web Version**: [`index.html`](index.html) - Interactive web version of my resume
 
 ## Online Access
