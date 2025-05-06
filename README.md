@@ -67,7 +67,7 @@ For web version modifications:
 
 ## Contact
 
-Feel free to reach out to me via:
+Feel free to reach out to me via :
 - **Email**: [nm30472@gmail.com](mailto:nm30472@gmail.com)
 - **LinkedIn**: [nikhil-mishra](https://linkedin.com/in/nikhil-mishra)
 - **GitHub**: [kaalpanikh](https://github.com/kaalpanikh)
