@@ -1,92 +1,163 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
 
-% Modern CV theme
-\moderncvstyle{classic}
-\moderncvcolor{blue}
+%-------------------------
+% Final ATS-Optimized Resume in LaTeX
+% Author : Nikhil Mishra (Updated for ATS)
+%------------------------
 
-% Adjust page margins
-\usepackage[scale=0.82, top=1.2cm, bottom=1.2cm, left=1.5cm, right=1.5cm]{geometry}
+\documentclass[letterpaper,11pt]{article}
 
-% Personal data
-\name{Nikhil}{Mishra}
-\phone[mobile]{+91 9975646076}
-\email{nm30472@gmail.com}
-\homepage{iam.nikhilmishra.xyz}
-\social[github]{kaalpanikh}
-\social[linkedin]{nikhil-mishra}
-\extrainfo{\url{links.nikhilmishra.xyz} | \url{x.com/kaalpanikhitis}}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\Large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1\vspace{-2pt}}%
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item%
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \item%
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
+    \small \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{-7pt}%
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\makecvtitle
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge Nikhil Mishra} \\
+  \vspace{1pt}
+  \small 9975646076 $|$ \href{mailto:nm30472@gmail.com}{nm30472@gmail.com} $|$
+  \href{https://links.nikhilmishra.xyz}{links.nikhilmishra.xyz} $|$
+  \href{https://github.com/kaalpanikh}{github.com/kaalpanikh} $|$
+  \href{https://www.linkedin.com/in/nikhil-mishra-392503306/}{linkedin.com/in/nikhil-mishra}
+\end{center}
 
-% Professional Summary section with more keywords for ATS
-\section{Summary}
-DevOps Engineer with 1+ years of experience specializing in cloud infrastructure automation, CI/CD pipeline optimization, and containerization strategies. Demonstrated expertise in migrating monolithic applications to microservices architectures, reducing AWS costs by 92\% and improving system performance by 35\%. Proficient in Kubernetes, Docker, Terraform, AWS services, monitoring solutions, and infrastructure as code. Published technical writer with 1000+ views on DevOps methodologies and cloud optimization techniques.
+%-----------WORK EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DevOps Engineer}{Jul. 2024 -- Present}
+      {Hooked}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Orchestrated the migration from a monolithic web app to a Kubernetes/EC2 microservices architecture, boosting scalability and reducing latency by 35\%.}
+        \resumeItem{Streamlined CI/CD pipelines for 20+ repositories using Dockerhub, GitHub Actions, cutting deployment time by 30\%.}
+        \resumeItem{Developed and deployed a Discord bot for real-time serverless cost monitoring, enabling proactive budget control and reducing cloud expenses.}
+        \resumeItem{Optimised AWS infrastructure, achieving a 90\% reduction in monthly expenses through cost-effective resource allocation and automation.}
+        \resumeItem{Collaborated with cross-functional teams to improve system uptime by 25\% through incident response automation.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {SRE Intern}{May 2023 -- Aug. 2023}
+      {Dukaan}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Managed cloud infrastructure and migrated to bare metal, reducing latency by 20\% and improving system performance.}
+        \resumeItem{Integrated Grafana with the ELK stack for precise log analysis and performance monitoring, enhancing observability.}
+        \resumeItem{Automated routine tasks using Bash, Python, and PowerShell, increasing operational efficiency by 40\%.}
+        \resumeItem{\textbf{Link:} \href{https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link}{SRE Intern Documentation}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-% Work Experience section with quantified achievements and technical keywords
-\section{Professional Experience}
+%-----------PROJECTS-----------
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Portfolio of 20+ DevOps projects}}{}
+      \resumeItemListStart
+        \resumeItem{Showcased a comprehensive portfolio of 20+ repositories, aligned with the \href{https://roadmap.sh/projects?g=devops}{DevOps roadmap}.}
+        \resumeItem{Repositories include \textbf{Blue-Green Deployment}, \textbf{Bastion Host Setup}, \textbf{File Integrity Checker}, and more.}
+        \resumeItem{\textbf{GitHub Link:} \href{https://github.com/kaalpanikh}{github.com/kaalpanikh}}
+        \resumeItem{\textbf{Showcase Link:} \href{https://iam.nikhilmishra.xyz}{iam.nikhilmishra.xyz}}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Technical Blogs}}{}
+      \resumeItemListStart
+        \resumeItem{I write about the DevOps projects I build. My blog features 20 articles, collectively garnering over 3000 views.}
+        \resumeItem{\textbf{Blog Link:} \href{https://nikhilmishra.xyz}{nikhilmishra.xyz}}
+      \resumeItemListEnd
+    \resumeProjectHeading
+  {\textbf{Vibe Coded Projects}}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{\href{https://aushadhiai.nikhilmishra.xyz}{aushadhiai.nikhilmishra.xyz}}: Built at a 24-hour hackathon with a friend; reads doctor prescriptions and provides detailed medicine information. Currently backend is down due to aws bills.}
+    \resumeItem{\textbf{\href{https://isitcricket.nikhilmishra.xyz}{isitcricket.nikhilmishra.xyz}}: Classic online cricket batting game.}
+    \resumeItem{\textbf{\href{https://bounce.nikhilmishra.xyz}{bounce.nikhilmishra.xyz}}: Web version of the iconic ball game from Nokia mobiles.}
+    \resumeItem{\textbf{\href{https://pokemon.nikhilmishra.xyz}{pokemon.nikhilmishra.xyz}}: Unlimited Pokémon card showcase and browser.}
+  \resumeItemListEnd
 
-\cventry{Jul 2024--Present}{DevOps Engineer}{Hooked}{Mumbai, India}{}{
-\begin{itemize}
-\item Architected and implemented migration from monolithic application to Kubernetes/EC2 microservices architecture, resulting in 35\% latency reduction and improved scalability
-\item Engineered and optimized CI/CD pipelines across 20+ repositories using GitHub Actions and DockerHub, decreasing deployment time by 30\%
-\item Implemented Infrastructure as Code (IaC) using Terraform and Ansible, ensuring consistent, reproducible, and version-controlled infrastructure deployments
-\item Developed real-time cost monitoring solution using serverless architecture and Discord integration for proactive budget management
-\item Optimized AWS resource utilization through right-sizing and architecture improvements, achieving 90\% reduction in monthly cloud expenses from \$130 to \$10
-\item Designed and deployed serverless monitoring infrastructure on Runpod for 20+ services, integrating ML models that improved system reliability by 15\%
-\end{itemize}}
+  \resumeSubHeadingListEnd
 
-\cventry{May 2023--Aug 2023}{Site Reliability Engineering (SRE) Intern}{Dukaan}{Bengaluru, India}{}{
-\begin{itemize}
-\item Led cloud-to-bare-metal migration initiative that reduced system latency by 20\% while maintaining reliability
-\item Integrated Grafana visualization platform with ELK stack (Elasticsearch, Logstash, Kibana) to enable comprehensive log analysis and performance monitoring
-\item Developed automation scripts in Bash and Python that reduced manual operational tasks by 40\%
-\item Collaborated with cross-functional teams to implement incident response protocols that reduced Mean Time To Recovery (MTTR) by 25\%
-\item Project documentation: \url{dukaan.nikhilmishra.xyz}
-\end{itemize}}
+%-----------SKILLS-----------
+\section{SKILLS}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Cloud \& Virtualization:} AWS, Google Cloud, Azure, Serverless \\
+      \textbf{Containerization:} Docker, Kubernetes, Microservices, Container Registries \\
+      \textbf{IaC \& Automation:} Terraform, Ansible, CloudFormation, Jenkins, GitHub Actions, GitOps \\
+      \textbf{Monitoring:} ELK, Prometheus, Grafana, Netdata \\
+      \textbf{Scripting:} Bash, Python, Shell Scripting, Golang\\
+      \textbf{Security \& Networking:} fail2ban, DNS Management, Firewall Management, Cloudflare Workers \\
+      \textbf{Methodologies:} Agile, Cost Optimisation, Performance Tuning, Incident Management, Collaboration
+    }
+  \resumeSubHeadingListEnd
 
-% Technical Skills section with categories for better ATS visibility
-\section{Technical Skills}
-\cvitem{Cloud Platforms}{AWS (EC2, Lambda, VPC, S3, CloudFront, Route53), Kubernetes, Docker, Microservices}
-\cvitem{DevOps Tools}{Terraform, Ansible, Jenkins, GitHub Actions, DockerHub, GitOps}
-\cvitem{Monitoring \& Logging}{Prometheus, Grafana, ELK Stack, Netdata, Datadog}
-\cvitem{Scripting \& Programming}{Bash, Python, Shell Scripting, YAML, JSON}
-\cvitem{Security \& Networking}{Cloudflare Workers, DNS Management, fail2ban, Firewall Configuration, VPC}
-\cvitem{Methodologies}{Agile/Scrum, Continuous Integration/Delivery, Infrastructure as Code, Cost Optimization}
-
-\newpage
-
-% Projects section with GitHub links and quantifiable results
-\section{Projects}
-\cventry{2023--Present}{DevOps Portfolio Projects}{}{}{}{
-\begin{itemize}
-\item Implemented 20+ comprehensive DevOps projects showcasing expertise in cloud infrastructure, containerization, CI/CD pipelines, and infrastructure automation
-\item Notable achievements include legacy-to-Kubernetes migrations reducing operational costs by 75\% and automated monitoring solutions improving system reliability by 25\%
-\item GitHub repository: \url{github.com/kaalpanikh}
-\end{itemize}}
-
-\cventry{2023--Present}{Technical Portfolio Website}{}{}{}{
-\begin{itemize}
-\item Designed and deployed personal technical portfolio showcasing DevOps projects, technical articles, and professional achievements
-\item Implemented analytics tracking showing 107 unique visitors and 8,920 total requests in past 30 days
-\item Live site: \url{iam.nikhilmishra.xyz}
-\end{itemize}}
-
-\cventry{2023--Present}{DevOps Technical Blog}{}{}{}{
-\begin{itemize}
-\item Author of technical blog focusing on cloud infrastructure, automation, and DevOps best practices with 1,000+ cumulative page views
-\item Featured articles include "I Escalated My App to the Cloud!", "Multi-Tier App Local Deployments", and "Custom Subdomain Forwarding with Cloudflare"
-\item Blog URL: \url{nikhilmishra.xyz}
-\end{itemize}}
-
-% Education section
-\section{Education}
-\cventry{Aug 2021--May 2025 (Expected)}{Bachelor of Engineering in Computer Engineering}{Mumbai University}{Boisar, Maharashtra, India}{}{}
-
-% Awards and certifications
-\section{Awards \& Achievements}
-\cvitem{2023}{First Prize (\rupee 5,000) at Shark Tank Competition, Sardar Patel Institute of Technology, for "Jai Kisan" application concept}
-\cvitem{2023}{Selected participant in Buildspace's Nights and Weekends Season 4, focusing on practical DevOps and automation skills development}
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Theem College of Engineering, Mumbai University}{Boisar, Maharashtra, India}
+      {Bachelor of Engineering in Computer Engineering}{Aug. 2021 -- May 2025}
+  \resumeSubHeadingListEnd
 
 \end{document}
