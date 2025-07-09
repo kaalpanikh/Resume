@@ -4,12 +4,11 @@
 [![Web Version](https://img.shields.io/badge/Web-CV-green)](https://cv.nikhilmishra.xyz)
 [![ATS Optimized](https://img.shields.io/badge/ATS-Optimized-orange)](Nikhil_Resume_New.pdf)
 
-This repository contains my professional resume, showcasing my experience as a DevOps Engineer with expertise in cloud infrastructure, CI/CD pipelines, and system optimization
+This repository contains my professional resume, showcasing my experience as a DevOps Engineer with expertise in cloud infrastructure, CI/CD pipelines, and system optimization.
 
 ## Resume Formats
 
 - **PDF Resume**: [`Nikhil_Resume_New.pdf`](Nikhil_Resume_New.pdf) - ATS-optimized resume for job applications
-- **LaTeX Source**: [`main.tex`](main.tex) - Source file for generating the PDF resume
 - **Web Version**: [`index.html`](index.html) - Interactive web version of my resume
 
 ## Online Access
@@ -68,7 +67,7 @@ For web version modifications:
 
 ## Contact
 
-Feel free to reach out to me via:
+Feel free to reach out to me via :
 - **Email**: [nm30472@gmail.com](mailto:nm30472@gmail.com)
 - **LinkedIn**: [nikhil-mishra](https://linkedin.com/in/nikhil-mishra)
 - **GitHub**: [kaalpanikh](https://github.com/kaalpanikh)
