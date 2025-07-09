@@ -1,7 +1,7 @@
 # Nikhil Mishra - Resume
 
 [![PDF Version](https://img.shields.io/badge/PDF-Resume-blue)](Nikhil_Resume_New.pdf)
-[![Web Version](https://img.shields.io/badge/Web-CV-green)](https://cv.nikhilmishra.live)
+[![Web Version](https://img.shields.io/badge/Web-CV-green)](https://cv.nikhilmishra.xyz)
 [![ATS Optimized](https://img.shields.io/badge/ATS-Optimized-orange)](Nikhil_Resume_New.pdf)
 
 This repository contains my professional resume, showcasing my experience as a DevOps Engineer with expertise in cloud infrastructure, CI/CD pipelines, and system optimization
@@ -16,12 +16,12 @@ This repository contains my professional resume, showcasing my experience as a D
 
 My resume is available online through multiple endpoints:
 
-- **Primary URL**: [cv.nikhilmishra.live](https://cv.nikhilmishra.live)
+- **Primary URL**: [cv.nikhilmishra.xyz](https://cv.nikhilmishra.xyz)
 - **GitHub Pages**: [kaalpanikh.github.io/Resume](https://kaalpanikh.github.io/Resume/)
 
 For more information about me and my work:
-- **Personal Website**: [iam.nikhilmishra.live](https://iam.nikhilmishra.live)
-- **Link Hub**: [links.nikhilmishra.live](https://links.nikhilmishra.live)
+- **Personal Website**: [iam.nikhilmishra.xyz](https://iam.nikhilmishra.xyz)
+- **Link Hub**: [links.nikhilmishra.xyz](https://links.nikhilmishra.xyz)
 
 ## Technologies Used
 
