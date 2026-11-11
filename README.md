@@ -4,7 +4,7 @@
 [![Web Version](https://img.shields.io/badge/Web-CV-green)](https://cv.nikhilmishra.xyz)
 [![ATS Optimized](https://img.shields.io/badge/ATS-Optimized-orange)](Nikhil_Resume_New.pdf)
 
-This repository contains my professional resume, showcasing my experience as a DevOps Engineer with expertise in cloud infrastructure, CI/CD pipelines, and system optimization.
+This repository contains my professional resume, showcasing my experience as a Site Reliability Engineer and DevOps Engineer, with expertise in production reliability, cloud infrastructure, security hardening, CI/CD and cost optimisation.
 
 ## Resume Formats
 
@@ -24,7 +24,7 @@ For more information about me and my work:
 
 ## Technologies Used
 
-- **LaTeX** with `moderncv` template for PDF generation
+- **LaTeX** (Jake's Resume template, one page, A4, ATS-friendly) for PDF generation
 - **HTML5/CSS3** for the web version
 - **GitHub Pages** for hosting
 - **Custom Domain** configuration with Cloudflare
@@ -39,7 +39,7 @@ This resume has been specifically optimized for Applicant Tracking Systems (ATS)
 - **Consistent Styling**: Uniform formatting throughout the document
 - **Technical Skill Categorization**: Clear organization of skills by category
 
-Current ATS compatibility score: ~60/100 (Working on improvements)
+Single-page layout with standard section headings and plain-text bullets for clean ATS parsing.
 
 ## Repository Structure
 
@@ -69,7 +69,7 @@ For web version modifications:
 
 Feel free to reach out to me via :
 - **Email**: [nm30472@gmail.com](mailto:nm30472@gmail.com)
-- **LinkedIn**: [nikhil-mishra](https://linkedin.com/in/nikhil-mishra)
+- **LinkedIn**: [nikhil-mishra](https://www.linkedin.com/in/nikhil-mishra-392503306/)
 - **GitHub**: [kaalpanikh](https://github.com/kaalpanikh)
 
 ---

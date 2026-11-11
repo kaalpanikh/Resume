@@ -1,11 +1,12 @@
-
 %-------------------------
-% Final ATS-Optimized Resume in LaTeX
-% Author : Nikhil Mishra (Updated for ATS)
+% Resume in LaTeX -- Nikhil Mishra
+% Layout based on Jake's Resume by Jake Gutierrez (MIT License)
+% https://github.com/jakegut/resume  (itself based on sb2nov/resume)
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
 
+\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
@@ -20,15 +21,16 @@
 
 \pagestyle{fancy}
 \fancyhf{}
+\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 \raggedbottom
@@ -37,30 +39,33 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\Large
-}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% Machine-readable PDF for ATS parsing
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{%
-  \item\small{#1\vspace{-2pt}}%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
-\newcommand{\resumeSubheading}[4]{%
-  \vspace{-2pt}\item%
-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
-    \textbf{#1} & #2 \\
-    \textit{\small #3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-7pt}%
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{%
-  \item%
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
-    \small \textbf{#1} & #2 \\
-  \end{tabular*}\vspace{-7pt}%
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -71,92 +76,87 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-  \textbf{\Huge Nikhil Mishra} \\
-  \vspace{1pt}
-  \small 9975646076 $|$ \href{mailto:nm30472@gmail.com}{nm30472@gmail.com} $|$
-  \href{https://links.nikhilmishra.xyz}{links.nikhilmishra.xyz} $|$
-  \href{https://github.com/kaalpanikh}{github.com/kaalpanikh} $|$
-  \href{https://www.linkedin.com/in/nikhil-mishra-392503306/}{linkedin.com/in/nikhil-mishra}
+    \textbf{\Huge \scshape Nikhil Mishra} \\ \vspace{2pt}
+    \small Site Reliability Engineer $|$ Mumbai, India $|$ +91 9975646076 $|$ \href{mailto:nm30472@gmail.com}{\underline{nm30472@gmail.com}} \\ \vspace{1pt}
+    \small \href{https://www.linkedin.com/in/nikhil-mishra-392503306/}{\underline{linkedin.com/in/nikhil-mishra-392503306}} $|$
+    \href{https://github.com/kaalpanikh}{\underline{github.com/kaalpanikh}} $|$
+    \href{https://nikhilmishra.xyz}{\underline{nikhilmishra.xyz}}
 \end{center}
 
-%-----------WORK EXPERIENCE-----------
-\section{WORK EXPERIENCE}
+%-----------SUMMARY-----------
+\section{Summary}
+\small{SRE with 2+ years in DevOps and SRE. I keep production sites for 40+ enterprise brands fast, secure and online, and I own projects from hosting design through go-live to day-2 operations.}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud}{: AWS (EC2, ECS, ALB, CloudFront, S3, RDS, IAM, SSM, SES), Azure, GCP, Cloudflare, DigitalOcean} \\
+     \textbf{Containers \& IaC}{: Docker, Kubernetes, Terraform, Ansible} \\
+     \textbf{CI/CD}{: GitHub Actions, Jenkins, blue-green deploys, automated rollback} \\
+     \textbf{Observability}{: Prometheus, Grafana, ELK, uptime monitoring, incident response} \\
+     \textbf{Security}{: VAPT remediation, WAF, TLS, least-privilege IAM, PAM} \\
+     \textbf{Web stack}{: Linux, nginx, Apache, Node.js, Next.js, Strapi, WordPress, MySQL, PostgreSQL} \\
+     \textbf{Languages}{: Bash, Python, Go}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-      {DevOps Engineer}{Jul. 2024 -- Present}
-      {Hooked}{Mumbai, India}
+      {Site Reliability Engineer}{Mar. 2026 -- Present}
+      {Schbang}{Mumbai, India}
       \resumeItemListStart
-        \resumeItem{Orchestrated the migration from a monolithic web app to a Kubernetes/EC2 microservices architecture, boosting scalability and reducing latency by 35\%.}
-        \resumeItem{Streamlined CI/CD pipelines for 20+ repositories using Dockerhub, GitHub Actions, cutting deployment time by 30\%.}
-        \resumeItem{Developed and deployed a Discord bot for real-time serverless cost monitoring, enabling proactive budget control and reducing cloud expenses.}
-        \resumeItem{Optimised AWS infrastructure, achieving a 90\% reduction in monthly expenses through cost-effective resource allocation and automation.}
-        \resumeItem{Collaborated with cross-functional teams to improve system uptime by 25\% through incident response automation.}
+        \resumeItem{Run production for \textbf{40+ enterprise brands} across \textbf{30+ cloud environments} on AWS, Azure, Cloudflare, DigitalOcean and E2E, in both our accounts and clients'}
+        \resumeItem{Closed \textbf{100\%} of infrastructure findings from a third-party VAPT audit (TLS, security headers, rate limiting, admin and network lockdown)}
+        \resumeItem{Patched \textbf{dozens of live servers} for critical PHP and Node.js CVEs with \textbf{zero lasting downtime}, using backups, dry runs and automatic rollback}
+        \resumeItem{Take new builds from costed hosting design to staging to production go-live, choosing WAF, load balancing and auto-scaling only where needed}
+        \resumeItem{Built deploy pipelines that health-check every release and roll back on failure for Next.js, Strapi, Node.js and WordPress apps}
+        \resumeItem{Removed myself as a bottleneck with a self-serve portal for AWS bills, instances and IAM users across accounts, behind an SSO gateway I built}
+        \resumeItem{Built an uptime monitor that alerts the team before clients notice, and an in-house VAPT scanner on open-source tools}
       \resumeItemListEnd
-    
+
+    \resumeSubheading
+      {DevOps Engineer}{Jul. 2024 -- Mar. 2026}
+      {BeHooked}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Cut monthly AWS spend by \textbf{90\%} through right-sizing and automation}
+        \resumeItem{Cut latency by \textbf{35\%} by migrating a monolith to microservices on Kubernetes and EC2}
+        \resumeItem{Cut deploy time by \textbf{30\%} across 20+ repos with GitHub Actions and Docker Hub}
+        \resumeItem{Improved uptime by \textbf{25\%} by automating incident response; built a Discord bot for real-time cost alerts}
+      \resumeItemListEnd
+
     \resumeSubheading
       {SRE Intern}{May 2023 -- Aug. 2023}
       {Dukaan}{Bengaluru, India}
       \resumeItemListStart
-        \resumeItem{Managed cloud infrastructure and migrated to bare metal, reducing latency by 20\% and improving system performance.}
-        \resumeItem{Integrated Grafana with the ELK stack for precise log analysis and performance monitoring, enhancing observability.}
-        \resumeItem{Automated routine tasks using Bash, Python, and PowerShell, increasing operational efficiency by 40\%.}
-        \resumeItem{\textbf{Link:} \href{https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link}{SRE Intern Documentation}}
+        \resumeItem{Cut latency by \textbf{20\%} as part of a cloud-to-bare-metal migration}
+        \resumeItem{Raised ops efficiency by \textbf{40\%} by automating routine tasks in Bash and Python; added Grafana on ELK for log monitoring}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{PROJECTS}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Portfolio of 20+ DevOps projects}}{}
-      \resumeItemListStart
-        \resumeItem{Showcased a comprehensive portfolio of 20+ repositories, aligned with the \href{https://roadmap.sh/projects?g=devops}{DevOps roadmap}.}
-        \resumeItem{Repositories include \textbf{Blue-Green Deployment}, \textbf{Bastion Host Setup}, \textbf{File Integrity Checker}, and more.}
-        \resumeItem{\textbf{GitHub Link:} \href{https://github.com/kaalpanikh}{github.com/kaalpanikh}}
-        \resumeItem{\textbf{Showcase Link:} \href{https://iam.nikhilmishra.xyz}{iam.nikhilmishra.xyz}}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{Technical Blogs}}{}
-      \resumeItemListStart
-        \resumeItem{I write about the DevOps projects I build. My blog features 20 articles, collectively garnering over 3000 views.}
-        \resumeItem{\textbf{Blog Link:} \href{https://nikhilmishra.xyz}{nikhilmishra.xyz}}
-      \resumeItemListEnd
-    \resumeProjectHeading
-  {\textbf{Vibe Coded Projects}}{}
-  \resumeItemListStart
-    \resumeItem{\textbf{\href{https://aushadhiai.nikhilmishra.xyz}{aushadhiai.nikhilmishra.xyz}}: Built at a 24-hour hackathon with a friend; reads doctor prescriptions and provides detailed medicine information. Currently backend is down due to aws bills.}
-    \resumeItem{\textbf{\href{https://isitcricket.nikhilmishra.xyz}{isitcricket.nikhilmishra.xyz}}: Classic online cricket batting game.}
-    \resumeItem{\textbf{\href{https://bounce.nikhilmishra.xyz}{bounce.nikhilmishra.xyz}}: Web version of the iconic ball game from Nokia mobiles.}
-    \resumeItem{\textbf{\href{https://pokemon.nikhilmishra.xyz}{pokemon.nikhilmishra.xyz}}: Unlimited Pokémon card showcase and browser.}
-  \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%-----------SKILLS-----------
-\section{SKILLS}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Cloud \& Virtualization:} AWS, Google Cloud, Azure, Serverless \\
-      \textbf{Containerization:} Docker, Kubernetes, Microservices, Container Registries \\
-      \textbf{IaC \& Automation:} Terraform, Ansible, CloudFormation, Jenkins, GitHub Actions, GitOps \\
-      \textbf{Monitoring:} ELK, Prometheus, Grafana, Netdata \\
-      \textbf{Scripting:} Bash, Python, Shell Scripting, Golang\\
-      \textbf{Security \& Networking:} fail2ban, DNS Management, Firewall Management, Cloudflare Workers \\
-      \textbf{Methodologies:} Agile, Cost Optimisation, Performance Tuning, Incident Management, Collaboration
-    }
-  \resumeSubHeadingListEnd
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{DevOps Project Portfolio} $|$ \emph{AWS, Docker, Ansible, nginx, GitHub Actions}}{\href{https://github.com/kaalpanikh}{\underline{github.com/kaalpanikh}}}
+          \resumeItemListStart
+            \resumeItem{Built 20+ infrastructure projects, including blue-green deployment, a bastion host, automated backups and a monitoring stack, each documented in a write-up on \href{https://nikhilmishra.xyz}{\underline{nikhilmishra.xyz}}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
-\section{EDUCATION}
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Theem College of Engineering, Mumbai University}{Boisar, Maharashtra, India}
+      {Theem College of Engineering, University of Mumbai}{Boisar, Maharashtra}
       {Bachelor of Engineering in Computer Engineering}{Aug. 2021 -- May 2025}
   \resumeSubHeadingListEnd
 
