@@ -19,7 +19,7 @@ My resume is available online through multiple endpoints:
 - **GitHub Pages**: [kaalpanikh.github.io/Resume](https://kaalpanikh.github.io/Resume/)
 
 For more information about me and my work:
-- **Personal Website**: [iam.nikhilmishra.xyz](https://iam.nikhilmishra.xyz)
+- **Personal Website**: [simple.nikhilmishra.xyz](https://simple.nikhilmishra.xyz)
 - **Link Hub**: [links.nikhilmishra.xyz](https://links.nikhilmishra.xyz)
 
 ## Technologies Used
